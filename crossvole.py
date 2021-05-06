@@ -66,11 +66,11 @@ def main():
     choice = st.sidebar.selectbox('Dev Menu',menu)
 
     if choice == 'Videos':
-        cfg_vid  = "/Users/erwanrivoalen/Downloads/darknet/build/darknet/x64/yolov3.cfg"
+        cfg_vid  = "/content/Test/yolov3.cfg"
         image_vid  = video_choose.file_uploader('Select a video file', type=['mp4','mov'])
         
-        names_vid  = "/Users/erwanrivoalen/Downloads/darknet/data/coco.names"
-        weights_vid  = "/Users/erwanrivoalen/yolov3.weights"
+        names_vid  = "/content/Test/coco.names"
+        weights_vid  = "/content/Test/yolov3.weights"
         submit_vid = run_btn.button('Run')
         if submit_vid:
             print(image_vid.name)
